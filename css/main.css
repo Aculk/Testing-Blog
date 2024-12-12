@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #eee;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+header {
+    background: #222;
+    padding: 20px 100px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+header nav a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: all 500ms ease;
+}
+
+header nav a.btn {
+    padding: 5px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+header nav a:hover {
+    color: #a1a1a1;
+}
+
+header nav a.btn:hover {
+    border-color: #de7474;
+}
+
+main {
+    float: left;
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 50%;
+}
+
+aside {
+    float: right;
+    margin-top: 50px;
+    margin-right: 100px;
+    width: 400px;
+}
+
+aside .info {
+    background: #ffc007;
+    color: #42410c;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 140%;
+    border-radius: 5px;
+}
+
+aside .info h2 {
+    margin-bottom: 10px;
+}
+
+aside img {
+    width: 100%;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+form {
+    margin: 30px 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    resize: vertical;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+form button {
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #fec008;
+    color: #42410c;
+    transition: transform 500ms ease;
+}
+
+form button:hover,
+.post a:hover {
+    transform: scale(1.1);
+}
+
+.error-mess {
+    color: #de7474;
+    margin: 10px 0;
+    font-weight: 600;
+    display: none;
+}
+
+.user-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: yellow;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.delete-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: #ff5252; 
+    transform: scale(1.05); 
+}
+
+.delete-btn:active {
+    background-color: #ff4040;
+    transform: scale(0.95);
+}
+
+.post {
+    margin-bottom: 50px;
+}
+
+.post h1 {
+    margin-bottom: 10px;
+}
+
+.post .avtor {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.post .avtor span {
+    background: #e1bb4a;
+    padding: 2px 7px;
+    font-weight: 300;
+    border-radius: 2px;
+}
+
+.post a {
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    width: 100px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #fec008;
+    color: #42410c;
+    transition: transform 500ms ease;
+}
+
+.comment {
+    width: 100%;
+    background: #fec008;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #42410c;
+    margin-bottom: 30px;
+}
+
+ /* Стили для чата */
+ .chat-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.chat-box {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.chat-box .message {
+    margin-bottom: 10px;
+}
+
+.chat-box .message p {
+    margin: 0;
+    padding: 5px;
+    background-color: #e1f5fe;
+    border-radius: 5px;
+}
+
+.form-input {
+    display: flex;
+    gap: 10px;
+}
+
+.form-input input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-input button {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background: #222;
+    padding: 30px;
+    color: #fff;
+    margin-top: 100px;
+}
